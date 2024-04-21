@@ -49,7 +49,19 @@ if (pxRatio !== 1) {
     gui.add(meta, 'retina resolution').onFinishChange(updateRetina);
 }
 gui.add(meta, 'github.com/mapbox/webgl-wind');
+
+//n초씩 끊어서 자동슬라이드
+
+
 updateWind(0);
+
+var i=0;
+setInterval(()=>{ 
+    i=i+6;
+    if(i>48) i=0;
+    updateWind(i);
+    console.log(i);
+                    },10000);
 updateRetina();
 
 function updateRetina() {
