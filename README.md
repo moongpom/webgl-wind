@@ -25,6 +25,6 @@ npm start
 
 ### Downloading weather data
 
-1. Install [ecCodes](https://confluence.ecmwf.int//display/ECC/ecCodes+Home) (e.g. `brew install eccodes`).
+1. Install [ecCodes](https://confluence.ecmwf.int//display/ECC/ecCodes+Home) (e.g. `brew install eccodes`). => windows : pip install eccodes-python
 2. Edit constants in `data/download.sh` for desired date, time and resolution.
 3. Run `./data/download.sh <dir>` to generate wind data files (`png` and `json`) for use with the library.
